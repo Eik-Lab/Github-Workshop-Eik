@@ -1,110 +1,83 @@
-# Git and GitHub Workshop for Beginners
+# Git and GitHub Workshop with Eik
 
-Welcome to the Git and GitHub workshop! This guide is designed for participants who have never used Git or GitHub before. By the end of this workshop, you'll have a basic understanding of version control, Git, and how to collaborate using GitHub.
+Welcome to the Git and GitHub workshop! This workshop is intended to provide you with a fundamental understanding of how you can use Git and GitHub to manage and collaborate on projects.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Installing Git](#installing-git)
-- [Basic Git Concepts](#basic-git-concepts)
-- [Using GitHub](#using-github)
-- [Collaboration Workflow](#collaboration-workflow)
-- [Additional Resources](#additional-resources)
+- [Introduction to Git and GitHub](#introduction-to-git-and-github)
+- [Installation](#installation)
+- [Basic Concepts](#basic-concepts)
+- [Commands](#commands)
+- [Workflow](#workflow)
+- [Collaboration](#collaboration)
+- [Resources](#resources)
 
-## Introduction
+## Introduction to Git and GitHub
 
-Version control is a system that helps you manage changes to your code over time. Git is a popular version control system, and GitHub is a platform that hosts Git repositories and adds collaboration features. This workshop will introduce you to the fundamental concepts of Git and how to use GitHub for collaborative projects.
+Git is a distributed version control system that helps you track changes in files over time. GitHub is a platform for collaboration and sharing Git repositories. In this workshop, you will learn how to use Git to manage project history and how to collaborate on GitHub.
 
-## Prerequisites
+## Installation
 
-Before you start, make sure you have:
-
-- A basic understanding of coding concepts.
-- A GitHub account. If you don't have one, you can sign up [here](https://github.com/join).
-- Git installed on your computer. You can download it from [here](https://git-scm.com/downloads).
-
-## Installing Git
+Before we begin, make sure Git is installed on your computer. You can download Git from [https://git-scm.com/](https://git-scm.com/) and follow the instructions for your platform.
 
 ### Windows
-
-If you're using Windows, you can install Git using Windows PowerShell:
-
-1. **Open Windows PowerShell:**
-   - Search for "PowerShell" in the Windows search bar and open it.
-
-2. **Install Git:**
-   - Run the following command in PowerShell:
-   
-     ```bash
-     choco install git -y
-     ```
-   
-     This will use the Chocolatey package manager to install Git.
-
-3. **Verify Installation:**
-   - After the installation is complete, you can verify it by running:
-   
-     ```bash
-     git --version
-     ```
-   
-     You should see the Git version number.
+    To check if Git is installed, open a terminal window and run the following command:
+    ```bash
+        git --version
+    ```
+    If Git is installed, you will see the version number. If not, you can follow the instructions at [https://git-scm.com/download/win](https://git-scm.com/download/win) to install Git.
 
 ### macOS
+    To check if Git is installed, open a terminal window and run the following command:
+    ```bash
+        git --version
+    ```
+    If Git is installed, you will see the version number. If not, you can follow the instructions at [https://git-scm.com/download/mac](https://git-scm.com/download/mac) to install Git.
 
-If you're using macOS, Git might already be installed. To check if it's installed:
+## Basic Concepts
 
-1. **Open Terminal:**
-   - You can find Terminal in the Applications > Utilities folder.
+- **Repository**: A place where project files and history are stored.
+- **Commit**: A snapshot of changes in your project files.
+- **Branch**: A fork of the project that allows you to work on new features or changes in isolation.
+- **Merge**: Incorporating changes from one branch into another.
+- **Pull Request**: A request to merge changes from one branch to another (especially on GitHub).
 
-2. **Check for Git:**
-   - In the Terminal, enter the following command:
-   
-     ```bash
-     git --version
-     ```
+## Commands
 
-   - If Git is installed, you'll see the version number.
+Some basic commands you will learn include:
 
-3. **Install Git (if not installed):**
-   - If Git is not installed, macOS might prompt you to install it when you use Git for the first time. Follow the prompts to install it.
+- `git clone`: Clone an existing repository to your computer.
+- `git add`: Add changes to the staging area, ready to be committed.
+- `git commit`: Save a snapshot of your changes.
+- `git pull`: Fetch changes from a remote repository to your local repository.
+- `git push`: Send your local changes to a remote repository.
+- `git branch`: View, create, or delete branches in the project.
+- `git merge`: Incorporate changes from one branch into another.
 
-## Basic Git Concepts
+## Workflow
 
-1. **Repository (Repo):**
-   - A repository is where your project's files and revision history are stored.
+1. Clone a repository to your computer.
+2. Create a branch for a new feature.
+3. Make changes to the files and commit them.
+4. Push the branch to GitHub.
+5. Create a Pull Request to propose the changes to the main branch.
+6. Discuss the changes, make necessary adjustments, and mark it as ready for merge.
+7. Perform a merge to integrate the changes into the main branch.
 
-2. **Commit:**
-   - A commit is a snapshot of your code at a specific point in time. It helps you track changes and add descriptions.
+## Collaboration
 
-3. **Branch:**
-   - A branch is a separate line of development. It's useful for working on features without affecting the main codebase.
+GitHub provides easy collaboration options:
 
-4. **Pull Request (PR):**
-   - A pull request is a request to merge changes from one branch into another. It's used for code review and collaboration.
+- Follow a repository to track the project's development.
+- Create Issues to track tasks, bugs, and requests.
+- Contribute to a project by cloning, modifying, and proposing changes through Pull Requests.
+- Use Pull Request discussions to discuss changes before merging.
 
-## Using GitHub
+## Resources
 
-### Create a Repository
+- [Git Documentation](https://git-scm.com/doc)
+- [GitHub Guides](https://guides.github.com/)
+- [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials)
+- [Pro Git Book](https://git-scm.com/book/en/v2)
 
-1. Click the "New" button on your GitHub profile.
-2. Give your repository a name and optional description.
-3. Choose visibility (public or private).
-4. Initialize with a README (optional).
-
-### Making Changes
-
-1. Edit files directly on GitHub or clone the repository and make changes locally.
-2. Use `git add` to stage changes and `git commit` to save them.
-3. Push changes to your repository using `git push`.
-
-## Collaboration Workflow
-
-1. Create a new branch for your feature.
-2. Make and commit your changes.
-3. Push your branch to GitHub.
-4. Open a pull request to merge changes.
-5. Collaborators review and discuss the changes.
-6. Make additional commits based on feedback.
-7. Once approved, merge the pull request.
+Good luck with the workshop! If you have any questions, feel free to ask.
