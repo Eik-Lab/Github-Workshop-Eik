@@ -21,18 +21,18 @@ Git is a distributed version control system that helps you track changes in file
 Before we begin, make sure Git is installed on your computer. You can download Git from [https://git-scm.com/](https://git-scm.com/) and follow the instructions for your platform.
 
 ### Windows
-    To check if Git is installed, open a terminal window and run the following command:
-    ```bash
-        git --version
-    ```
-    If Git is installed, you will see the version number. If not, you can follow the instructions at [https://git-scm.com/download/win](https://git-scm.com/download/win) to install Git.
+To check if Git is installed, open a terminal window and run the following command:
+```bash
+git --version
+```
+If Git is installed, you will see the version number. If not, you can follow the instructions at [https://git-scm.com/download/win](https://git-scm.com/download/win) to install Git.
 
 ### macOS
-    To check if Git is installed, open a terminal window and run the following command:
-    ```bash
-        git --version
-    ```
-    If Git is installed, you will see the version number. If not, you can follow the instructions at [https://git-scm.com/download/mac](https://git-scm.com/download/mac) to install Git.
+To check if Git is installed, open a terminal window and run the following command:
+```bash
+git --version
+```
+If Git is installed, you will see the version number. If not, you can follow the instructions at [https://git-scm.com/download/mac](https://git-scm.com/download/mac) to install Git.
 
 ## Basic Concepts
 
