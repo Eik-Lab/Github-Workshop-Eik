@@ -19,9 +19,9 @@ Type er en beskrivelse av hva du har gjort i commiten. Det finnes 7 forskjellige
 
 De to viktigste er: 
 
-- **feat:** En ny feature.
+- **feat:** En ny feature. En ny fil, en ny funksjon eller en ny side.
 
-- **fix:** En bug fix.
+- **fix:** En bug fix. En feil i koden som er rettet.
 
 
 Andre er:
