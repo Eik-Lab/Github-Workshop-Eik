@@ -121,12 +121,62 @@ Nå som du har klonet repositoriet til din maskin, kan du begynne å jobbe med p
 Nå som du har opprettet et repository og lagt til en README.md fil, kan du begynne å jobbe med prosjektet ditt. En god måte å organisere arbeidet ditt på er å bruke branches. En branch er en gren av prosjektet som lar deg arbeide isolert med nye funksjoner eller endringer. Når du er ferdig med endringene dine, kan du sammenføye dem med hovedgrenen ved å gjøre en merge.
 
 ## 6.1 Opprett en ny branch:
-   - Klikk på **main**-knappen helt nede i venstre hjørne. Dette er navnet på hovedgrenen. Du blir nå tatt til søkefeltet hvor du får mulighet til å trykke på **Create new branch**. Skriv inn navnet på den nye grenen din. Du vil nå se at du har byttet til den nye grenen når du ser på navnet helt nede i venstre hjørne.
+   - Klikk på **main**-knappen helt nede i venstre hjørne. Dette er navnet på hovedgrenen. Du blir nå tatt til søkefeltet hvor du får mulighet til å trykke på **Create new branch**. Skriv inn navnet **test_branch** på den nye grenen din. Du vil nå se at du har byttet til den nye grenen når du ser på navnet helt nede i venstre hjørne.
    - Du jobber nå i en ny gren av prosjektet ditt, men andre ord en kopi. Du kan gjøre endringer i prosjektet ditt og committe dem til den nye grenen.
    - Når du er ferdig med endringene dine, kan du sammenføye dem med hovedgrenen ved å gjøre en merge.
   
 ## 6.2 Legge til en ny fil i den nye grenen din:
    - Lag en ny fil ved å trykke på **New File**-knappen i venstre hjørne.
-   - Skriv inn navnet **new_file.md** og trykk enter.
+   - Skriv inn navnet **new_file.txt** og trykk enter.
    - Skriv inn en en tilfeldig tekst i new_file.md filen.
-- Commit filen ved å trykke på **Source Control** i menyen til venstre, stage filen ved å trykke på **+** og commit filen ved å skrive inn en commit messageen **feat: added a new file** og trykke på **Commit**.
+- Commit filen ved å trykke på **Source Control** i menyen til venstre, stage filen ved å trykke på **+** og commit filen ved å skrive inn en commit messageen **feat: added a new file** og trykke på **Commit & push**.
+
+## 6.3 Pull request:
+   - Nå som du har gjort endringer i den nye grenen din, kan du gjøre en merge med hovedgrenen.
+   - Gå inn på repoet ditt på GitHub. Du vil nå se en **Compare & pull request**-knapp. Trykk på denne.
+- Du vil nå se en oversikt over endringene du har gjort i den nye grenen din. Trykk på **Create pull request**.
+
+## 6.4 Godkjenne pull request:
+- Du vil nå se en forespørsel om å sammenføye endringene i den nye grenen din med hovedgrenen. Trykk på **Merge pull request** og deretter **Confirm merge**.
+- Du har nå gjort en merge av endringene i den nye grenen din med hovedgrenen. Du kan nå slette den nye grenen din ved å trykke på **Delete branch**.
+- Grenen du ga navnet **test_branch** er nå blitt slettet og du er tilbake til hovedgrenen.
+
+# 7. Merge conflicts
+Merge conflict oppstår når endringer i en gren ikke kan sammenføyes med endringer i en annen gren. Dette kan skje når to personer gjør endringer i samme fil, eller når en person gjør endringer i en fil og en annen person sletter filen. Når dette skjer, må du løse konflikten manuelt.
+
+Gå sammen to og to i grupper og gjør følgende:
+## 7.1 Person A gjør sitt repo offentlig:
+- Gå inn på repoet ditt på GitHub.
+- Trykk på **Settings**.
+- Bla ned til **Danger Zone** og trykk på **Make public**.
+- Trykk på **I understand, make this repository public**.
+
+## 7.2 Person B cloner repoet:
+- Gå inn på repoet til den andre personen.
+- Trykk på **Code**-knappen og kopier SSH URL-en.
+- Åpne VS Code og velg **Clone repository**.
+- Skriv inn URL-en du kopierte fra GitHub og velg hvor du vil lagre repositoriet på din maskin.
+
+## 7.3 Person A gjør endringer i en fil:
+- Person A lager en ny branch med navnet **person_A** og passer på at han er på denne grenen.
+- Person A skal nå gjøre endringer i filen **New_file.txt** og committe & pushe endringene.
+
+
+## 7.4 Person B gjør endringer i samme fil:
+- Person B skal nå lage en ny branch med navnet **person_B** og passe på at han er på denne grenen.
+- Person B skal nå gjøre endringer i filen **New_file.txt** og committe endringene.
+- Person B skal nå prøve å pushe endringene sine. Dette vil ikke fungere fordi person A har gjort endringer i samme fil. Person B må nå hente endringene fra GitHub og løse merge conflictet.
+
+## 7.5 Person B løser merge conflictet:
+- Person B skal nå hente endringene fra GitHub ved å trykke på **Source Control** i menyen til venstre og **Pull**.
+- Person B skal nå løse merge conflictet ved å åpne filen **New_file.txt** og fjerne linjene som begynner med **<<<<<<< HEAD** og **>>>>>>>**.
+- Person B skal nå stage filen ved å trykke på **+** og committe endringene ved å skrive inn en commit message og trykke på **Commit**.
+- Person B skal nå pushe endringene ved å trykke på de tre prikkene i venstre hjørne og velge **Push**.
+
+## 7.6 Person A og B gjør en merge:
+- Person A og B skal nå gjøre en merge ved å gå inn på repoet på GitHub og trykke på **Compare & pull request**.
+
+
+
+
+
