@@ -6,11 +6,12 @@ Velkommen til Git og GitHub workshop! Denne workshopen er ment å gi deg en grun
 
 - [1. Innledning til Git og GitHub](#innledning-til-git-og-github)
 - [2. Før vi setter ignag](#før-vi-setter-ignag)
-- [3. Grunnleggende konsepter](#grunnleggende-konsepter)
--
-- [Arbeidsflyt](#arbeidsflyt)
-- [Samarbeid](#samarbeid)
-- [Ressurser](#ressurser)
+- [3 Lag et nytt repository](#lag-et-nytt-repository)
+- [4. Grunnleggende konsepter](#grunnleggende-konsepter)
+- [5. Jobb med prosjektet fra VS Code](#jobb-med-prosjektet-fra-vs-code)
+- [6. Branching og merging](#branching-og-merging)
+- [7. Merge conflicts](#merge-conflicts)
+
 
 # 1. Innledning til Git og GitHub
 
@@ -153,6 +154,7 @@ Nå som du har opprettet et repository og lagt til en README.md fil, kan du begy
 
 # 7. Merge conflicts
 Merge conflict oppstår når endringer i en gren ikke kan sammenføyes med endringer i en annen gren. Dette kan skje når to personer gjør endringer i samme fil, eller når en person gjør endringer i en fil og en annen person sletter filen. Når dette skjer, må du løse konflikten manuelt.
+
 
 Gå sammen to og to i grupper og gjør følgende:
 ## 7.1 Person A gjør sitt repo offentlig:
