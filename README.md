@@ -4,13 +4,13 @@ Velkommen til Git og GitHub workshop! Denne workshopen er ment å gi deg en grun
 
 # Innhold
 
-- [1. Innledning til Git og GitHub](#innledning-til-git-og-github)
-- [2. Før vi setter ignag](#før-vi-setter-ignag)
-- [3 Lag et nytt repository](#lag-et-nytt-repository)
-- [4. Grunnleggende konsepter](#grunnleggende-konsepter)
-- [5. Jobb med prosjektet fra VS Code](#jobb-med-prosjektet-fra-vs-code)
-- [6. Branching og merging](#branching-og-merging)
-- [7. Merge conflicts](#merge-conflicts)
+- [1. Innledning til Git og GitHub](#1-innledning-til-git-og-github)
+- [2. Før vi setter ignag](#2-før-vi-setter-ignag)
+- [3 Lag et nytt repository](#3-lag-et-nytt-repository)
+- [4. Grunnleggende konsepter](#4-grunnleggende-konsepter)
+- [5. Jobb med prosjektet fra VS Code](#5-jobb-med-prosjektet-fra-vs-code)
+- [6. Branching og merging](#6-branching-og-merging)
+- [7. Merge conflicts](#7-merge-conflicts)
 
 
 # 1. Innledning til Git og GitHub
