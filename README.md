@@ -108,7 +108,8 @@ Nå som du har klonet repositoriet til din maskin, kan du begynne å jobbe med p
 - I VS Code, trykk på **New File**-knappen i venstre hjørne.
 - Skriv inn navnet **README.md** og trykk enter.
 - Skriv inn en beskrivelse av prosjektet ditt i README.md filen.
-![Bilde av ny fil](pictures/new_filE.png)
+![Bilde av ny fil](pictures/new_file.png)
+
 
 ## 5.2 Commit og push filen til GitHub:
    - Commit filen ved å trykke på **Source Control** i menyen til venstre og **Commit**.
