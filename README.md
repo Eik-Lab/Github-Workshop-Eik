@@ -27,6 +27,7 @@ For å sjekke om Git er installert, kan du åpne et terminalvindu og kjøre føl
 ```bash
 git --version
 ```
+![Bilde av git version](pictures/wp_git.png)
 Hvis Git er installert, vil du se versjonsnummeret. Hvis ikke, kan du følge instruksjonene på [https://git-scm.com/download/win](https://git-scm.com/download/win) for å installere Git.
 
 ### macOS
@@ -46,6 +47,8 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
 
+![Bilde av git config](pictures/git_bash_1.png)
+
 For å se at konfigurasjonen er lagret, kan du kjøre følgende kommandoer:
 
 ```bash
@@ -55,6 +58,7 @@ git config --global user.name
 git config --global user.email
 ```
 Du bør nå se navnet og e-postadressen du har konfigurert.
+![Bilde av git config](pictures/git_bash_2.png)
 
 
 
