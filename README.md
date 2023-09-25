@@ -10,7 +10,8 @@ Velkommen til Git og GitHub workshop! Denne workshopen er ment å gi deg en grun
 - [4. Grunnleggende konsepter](#4-grunnleggende-konsepter)
 - [5. Jobb med prosjektet fra VS Code](#5-jobb-med-prosjektet-fra-vs-code)
 - [6. Branching og merging](#6-branching-og-merging)
-- [7. Merge conflicts](#7-merge-conflicts)
+- [7. Jobbe sammen med andre og merge conflicts](#7-jobbe-sammen-med-andre-og-merge-conflicts)
+- [8. Merge conflicts med brancher](#8-merge-conflicts-med-brancher)
 
 
 # 1. Innledning til Git og GitHub
@@ -175,12 +176,13 @@ Gå sammen to og to i grupper og gjør følgende:
 ## 7.3 Person A gjør endringer i en fil:
 - Person A og B skal nå ha samme repo på sine maskiner.
 - Person A kan nå gjøre endringer i filen **New_file.txt** og committe & pushe endringene.
-- For å unnvike merge conflicts, kan person B nå hente endringene fra GitHub ved å trykke på **Pull**-knappen under **Source Control**i VS Code, eller trykke på det lille synkroniseringshjulet nede i venstre hjørne ved siden av der branch navnet er.
+- For å unnvike merge conflicts, kan person B nå hente endringene fra GitHub ved å trykke på **Pull**-knappen under **Source Control** i VS Code, eller trykke på det lille synkroniseringshjulet nede i venstre hjørne ved siden av der branch navnet er.
 - Person B skal nå å fått den nyeste versjonen av filen **New_file.txt**.
 
 ## 7.4 Person B gjør endringer i samme fil:
 - Person B skal nå gjøre endringer i filen **New_file.txt** og committe & pushe endringene.
 - Person A skal nå hente endringene fra GitHub ved å trykke på **Pull**-knappen under **Source Control**i VS Code, eller trykke på det lille synkroniseringshjulet nede i venstre hjørne ved siden av der branch navnet er.
+- Person A skal nå å fått den nyeste versjonen av filen **New_file.txt**.
 
 ## 7.5 Merge conflicts:
 **Vi skal se hva som skjer når person A og B gjør endringer i samme fil samtidig.**
@@ -195,33 +197,26 @@ Gå sammen to og to i grupper og gjør følgende:
 Merge conflict oppstår når endringer i en gren ikke kan sammenføyes med endringer i en annen gren. Dette kan skje når to personer gjør endringer i samme fil, eller når en person gjør endringer i en fil og en annen person sletter filen. Når dette skjer, må du løse konflikten manuelt.
 
 
-Gå sammen to og to i grupper og gjør følgende:
-## 7.1 Person A gjør sitt repo offentlig:
-- Gå inn på repoet ditt på GitHub.
-- Trykk på **Settings**.
-- Bla ned til **Danger Zone** og trykk på **Make public**.
-- Trykk på **I understand, make this repository public**.
+Forsett i samme grupper som i forrige oppgave og gjør følgende:
 
-## 7.2 Person B cloner repoet:
-- Gå inn på repoet til den andre personen.
-- Trykk på **Code**-knappen og kopier **HTTPS** URL-en.
-- Åpne VS Code og velg **Clone repository**.
-- Skriv inn URL-en du kopierte fra GitHub og velg hvor du vil lagre repositoriet på din maskin.
 
-## 7.3 Person A gjør endringer i en fil:
+## 8.1 Person A gjør endringer i en fil:
 - Person A lager en ny branch med navnet **person_A** og passer på at han er på denne grenen.
 - Person A skal nå gjøre endringer i filen **New_file.txt** og committe & pushe endringene.
 
 
-## 7.4 Person B gjør endringer i samme fil:
+## 8.2 Person B gjør endringer i samme fil:
 - Person B skal nå lage en ny branch med navnet **person_B** og passe på at han er på denne grenen.
 - Person B skal nå gjøre endringer i filen **New_file.txt** og committe & pushe endringene.
 
-## 7.5 Pull request:
-- Person A skal nå gjøre en pull request og merge endringene sine med hovedgrenen. Dette skal gå fint.
-- Person B skal nå gjøre en pull request og merge endringene sine med hovedgrenen. Dette skal ikke gå fint. Person B vil nå få en merge conflict.
+## 8.3 Pull request:
+- Person A skal nå gjøre en pull request slik som i punkt 6.3 og merge endringene sine med hovedgrenen slik som i punkt 6.4. Dette skal gå fint.
+- Person B skal nå gjøre en pull request som i punk 6.3 og merge endringene sine med hovedgrenen som i punk 6.4. Dette skal ikke gå fint. Person B vil nå få en merge conflict.
 - Dere må nå manuelt løse konflikten.
 - Når konflikten er løst, kan dere gjøre en merge av endringene i den nye grenen deres med hovedgrenen.
+- Dere kan nå slette de nye grenene deres ved å trykke på **Delete branch**.
+- Dere skal nå ha en ny versjon av filen **New_file.txt** som inneholder endringene som ble valgt i merge conflict.
+- Dere kan nå gjøre en pull av endringene fra GitHub ved å trykke på **Pull**-knappen under **Source Control** i VS Code, eller trykke på det lille synkroniseringshjulet nede i venstre hjørne ved siden av der branch navnet er.
 
 
 
