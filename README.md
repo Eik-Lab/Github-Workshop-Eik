@@ -95,7 +95,9 @@ Nå som du har installert Git og konfigurert brukernavn og e-postadresse, er du 
 
 ## 3.4 Klon repositoriet til din maskin:
    - Åpne VS Code og velg **Clone repository**.
+   - Første gang du gjør dette, vil du bli bedt om å logge inn på GitHub. Logg inn med brukernavn og passord.
    - Skriv inn URL-en du kopierte fra GitHub og velg hvor du vil lagre repositoriet på din maskin.
+   - Det kan også hende at du vil få en melding om at du må logge inn med GIT, så da blir du tatt til et nytt vindu
    ![Bilde av URL](pictures/clone_ssh.png)
 
 
