@@ -83,8 +83,8 @@ Nå som du har installert Git og konfigurert brukernavn og e-postadresse, er du 
 
 ## 3.3 Kopier URL-en til repositoriet:
    - Klikk på den grønne **Code**-knappen.
-   - Velg SSH og kopier URL-en som kommer opp.
-    ![Bilde av code knapp](pictures/SSH.png)
+   - Velg **HTTPS** og kopier URL-en som kommer opp.
+    ![Bilde av code knapp](pictures/https.png)
 
 
 ## 3.4 Klon repositoriet til din maskin:
@@ -155,9 +155,43 @@ Nå som du har opprettet et repository og lagt til en README.md fil, kan du begy
 - I VS Code kan du nå trykke på **Pull**-knappen for å hente endringene fra GitHub.
 - Du vil forsatt være i **test_brach** i VScode selv om den er slettet fra ditt repo. Du kan nå trykke på **main**-knappen helt nede i venstre hjørne og velge **main** for å bytte til hovedgrenen. Eller lage en ny branch og bytte til denne.
 
+# 7. Jobbe sammen med andre og merge conflicts
+Når to personer gjør endringer i samme fil, eller når en person gjør endringer i en fil og en annen person sletter filen, kan det oppstå merge conflicts. Når dette skjer, må du løse konflikten manuelt.
+
+Gå sammen to og to i grupper og gjør følgende:
+## 7.1 Person A inviterer person B til å jobbe på prosjektet sitt:
+- Person A går inn på repoet sitt på GitHub.
+- Trykk på **Settings**.
+- Trykk på **Collaboraters**.
+- Skriv inn passordet ditt.
+- Skriv inn brukernavnet til person B og trykk på **Add collaborater**.
+
+## 7.2 Person B cloner repoet:
+- Person B går inn på repoet til person A.
+- Trykk på **Code**-knappen og kopier **HTTPS** URL-en.
+- Åpne VS Code og velg **Clone repository**.
+- Skriv inn URL-en du kopierte fra GitHub og velg hvor du vil lagre repositoriet på din maskin.
+
+## 7.3 Person A gjør endringer i en fil:
+- Person A og B skal nå ha samme repo på sine maskiner.
+- Person A kan nå gjøre endringer i filen **New_file.txt** og committe & pushe endringene.
+- For å unnvike merge conflicts, kan person B nå hente endringene fra GitHub ved å trykke på **Pull**-knappen under **Source Control**i VS Code, eller trykke på det lille synkroniseringshjulet nede i venstre hjørne ved siden av der branch navnet er.
+- Person B skal nå å fått den nyeste versjonen av filen **New_file.txt**.
+
+## 7.4 Person B gjør endringer i samme fil:
+- Person B skal nå gjøre endringer i filen **New_file.txt** og committe & pushe endringene.
+- Person A skal nå hente endringene fra GitHub ved å trykke på **Pull**-knappen under **Source Control**i VS Code, eller trykke på det lille synkroniseringshjulet nede i venstre hjørne ved siden av der branch navnet er.
+
+## 7.5 Merge conflicts:
+**Vi skal se hva som skjer når person A og B gjør endringer i samme fil samtidig.**
+- Person A skal nå gjøre endringer i filen **New_file.txt** og committe & pushe endringene.
+- Person B skal også gjøre endringer i filen **New_file.txt** og committe & pushe endringene, han skal ikke pulle endringene fra GitHub før han har gjort dette.
+- Dere vil nå få en **merge conflict** hvor dere må velge hvilke endringer dere vil beholde.
 
 
-# 7. Merge conflicts
+
+
+# 8. Merge conflicts med brancher
 Merge conflict oppstår når endringer i en gren ikke kan sammenføyes med endringer i en annen gren. Dette kan skje når to personer gjør endringer i samme fil, eller når en person gjør endringer i en fil og en annen person sletter filen. Når dette skjer, må du løse konflikten manuelt.
 
 
@@ -170,7 +204,7 @@ Gå sammen to og to i grupper og gjør følgende:
 
 ## 7.2 Person B cloner repoet:
 - Gå inn på repoet til den andre personen.
-- Trykk på **Code**-knappen og kopier SSH URL-en.
+- Trykk på **Code**-knappen og kopier **HTTPS** URL-en.
 - Åpne VS Code og velg **Clone repository**.
 - Skriv inn URL-en du kopierte fra GitHub og velg hvor du vil lagre repositoriet på din maskin.
 
