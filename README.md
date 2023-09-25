@@ -122,12 +122,14 @@ Nå som du har klonet repositoriet til din maskin, kan du begynne å jobbe med p
 
 
 ## 5.2 Commit og push filen til GitHub:
-   - Commit filen ved å trykke på **Source Control** i menyen til venstre og **Commit**.
+   - Du skal nå se at det har kommet opp et varsel på **Source Control**-knappen i menyen på venstre side. Trykk på denne.
    - Hold musepekeren over **README.md** og trykk på **+** for å stage filen.
-   - Skriv inn en commit message og trykk på **Commit** (se commit_message.md for tips til gode commit messages).
+   - Skriv inn en commit message, f.eks "feat: added README" og trykk på **Commit** (se commit_message.md for tips til gode commit messages).
    - Trykk på de tre prikkene i venstre hjørne og velg **Push**.
    - Nå skal README.md filen din være på GitHub.
    ![Bilde av commit](pictures/commit.png)
+
+   Du har nå lært hvordan du sender filer fra VS Code til GitHub. Du kan nå gjøre endringer i filene dine og committe og pushe endringene til GitHub.
 
 # 6. Branching og merging
 Nå som du har opprettet et repository og lagt til en README.md fil, kan du begynne å jobbe med prosjektet ditt. En god måte å organisere arbeidet ditt på er å bruke branches. En branch er en gren av prosjektet som lar deg arbeide isolert med nye funksjoner eller endringer. Når du er ferdig med endringene dine, kan du sammenføye dem med hovedgrenen ved å gjøre en merge.
