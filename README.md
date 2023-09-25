@@ -5,7 +5,7 @@ Velkommen til Git og GitHub workshop! Denne workshopen er ment å gi deg en grun
 # Innhold
 
 - [1. Innledning til Git og GitHub](#1-innledning-til-git-og-github)
-- [2. Før vi setter ignag](#2-før-vi-setter-ignag)
+- [2. Før vi setter ignag](#2-før-vi-setter-i-gang)
 - [3 Lag et nytt repository](#3-lag-et-nytt-repository)
 - [4. Grunnleggende konsepter](#4-grunnleggende-konsepter)
 - [5. Jobb med prosjektet fra VS Code](#5-jobb-med-prosjektet-fra-vs-code)
@@ -18,13 +18,20 @@ Velkommen til Git og GitHub workshop! Denne workshopen er ment å gi deg en grun
 
 Git er et distribuert versionskontrollsystem som hjelper deg med å spore endringer i filer over tid. GitHub er en plattform for samarbeid og deling av Git-repositorier. I denne workshopen vil du lære hvordan du bruker Git til å administrere prosjekthistorikk og hvordan du samarbeider på GitHub.
 
-# 2. Før vi setter ignag
+# 2. Før vi setter i gang
 
-## 2.1 Installasjon av GIT
+
+## 2.1 Oppsett av GitHub-konto
+Hvis du ikke allerede har en GitHub-konto, kan du opprette en på https://github.com/
+
+## 2.2 Laste ned VS Code
+Vi skal bruke VS Code til å jobbe med Git og GitHub. Du kan laste ned VS Code fra [https://code.visualstudio.com/](https://code.visualstudio.com/).
+
+## 2.3 Installasjon av GIT
 Før vi begynner, må du sørge for at Git er installert på datamaskinen din. Du kan laste ned Git fra [https://git-scm.com/](https://git-scm.com/) og følge instruksjonene for din plattform.
 
 ### Windows
-For å sjekke om Git er installert, kan du åpne et terminalvindu og kjøre følgende kommando:
+For å sjekke om Git er installert, kan du åpne et terminalvindu, f.eks **Windows Powershell**, og kjøre følgende kommando:
 ```bash
 git --version
 ```
@@ -38,8 +45,10 @@ git --version
 ```
 Hvis Git er installert, vil du se versjonsnummeret. Hvis ikke, kan du følge instruksjonene på [https://git-scm.com/download/mac](https://git-scm.com/download/mac) for å installere Git.
 
-## 2.2 Oppsett av Git-konfigurasjon
+## 2.4 Oppsett av Git-konfigurasjon
 Vi skal  nå konfigurere Git med navn og e-postadresse. Dette er viktig fordi Git bruker denne informasjonen til å identifisere forfatteren av hver endring. Du kan bruke følgende kommandoer for å konfigurere Git:
+
+Åpne **GIT Bash** og skriv inn følgende kommandoer:
 
 ```bash
 git config --global user.name "Your Name"
@@ -63,11 +72,7 @@ Du bør nå se navnet og e-postadressen du har konfigurert.
 
 
 
-## 2.3 Oppsett av GitHub-konto
-Hvis du ikke allerede har en GitHub-konto, kan du opprette en på https://github.com/
 
-## 2.4 Laste ned VS Code
-Vi skal bruke VS Code til å jobbe med Git og GitHub. Du kan laste ned VS Code fra [https://code.visualstudio.com/](https://code.visualstudio.com/).
 
 # 3. Lag et nytt repository
 Nå som du har installert Git og konfigurert brukernavn og e-postadresse, er du klar til å opprette et nytt repository og begynne å spore endringer!
